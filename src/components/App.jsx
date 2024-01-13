@@ -5,11 +5,6 @@ import Filter from './Filter/Filter';
 import { useEffect, useState } from 'react';
 
 const App = () => {
-  // state = {
-  //   contacts: [],
-  //   filter: '',
-  // };
-
   const [contacts, setContacts] = useState([]);
   const [filter, setFilter] = useState('');
 
@@ -39,7 +34,6 @@ const App = () => {
     }
 
     setContacts(prevState => [...prevState, contact]);
-    // console.log(contacts);
   };
 
   const deleteContact = contactId => {
